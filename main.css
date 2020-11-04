@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+p {
+	font-weight: 300;
+	color: #111;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('./images/landingImg.jpg');
+	background-size: cover;
+}
+
+.banner .content {
+	max-width: 900px;
+	text-align: center;
+}
+
+.banner .content h1 {
+	font-size: 5em;
+	color: #f3f3f3;
+}
+
+.banner .content p {
+	font-size: 1em;
+	color: #f3f3f3;
+}
+
+.btnMenu {
+	font-size: 1em;
+	color: #f3f3f3;
+	background-color: #952f1e;
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 1s;
+}
+
+.btnMenu:hover {
+	letter-spacing: 6px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.7s;
+}
+
+header.sticky {
+	background: #f3f3f3;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo {
+	color: #952f1e;
+}
+
+header .logo {
+	color: #f3f3f3;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+header .logo span {
+	color: #952f1e;
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+header .navigation li {
+	list-style: none;
+	margin-left: 30px;
+}
+
+header .navigation li a {
+	text-decoration: none;
+	color: #f3f3f3;
+	font-weight: 300;
+}
+
+header.sticky .navigation li a {
+	color: #952f1e;
+}
+
+header .navigation li a:hover {
+	color: #e38c25;
+}
+
+section {
+	padding: 150px;
+	min-height: 100vh;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.row .col50 {
+	position: relative;
+	width: 50%;
+}
+
+.imgBx img {
+	height: 500px;
+	width: 500px;
+	object-fit: cover;
+}
+
+.titleText {
+	color: #111;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.titleText span {
+	color: #952f1e;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.row .col50 .imgBx {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.menu .content {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.menu .content .box {
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #ffffff;
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgBxMenu {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.menu .content .box .imgBxMenu img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.menu .content .box .menuText h3 {
+	font-weight: 400;
+	color: #111;
+}
+
+.menutText h3,
+.howTo h3 {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.howTo .content {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+}
+
+.howTo .content .box {
+	width: 250px;
+	margin: 15px;
+}
+
+.howTo .content .box .imgBxMenu {
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.howTo .content .box .imgBxMenu img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.howTo .content .box .text {
+	padding: 15px 0 5px;
+}
+
+.howTo .content .box .text h3 {
+	font-weight: 600;
+	color: #111;
+}
+.howTo .content .box {
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #ffffff;
+	box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.contactUs {
+	background: url('./images/contact.jpg');
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+}
+
+.contactForm {
+	padding: 75px 50px;
+	background: #ffffff;
+	box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+	max-width: 500px;
+	margin: 60px auto;
+}
+
+.contactForm h3 {
+	color: #111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.contactForm .inputBox {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+	width: 100%;
+	border: 1px solid #dee0e6;
+	padding: 10px;
+	color: #111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+
+.contactForm .inputBox button {
+	padding: 10px;
+	font-size: 1em;
+	color: #ffffff;
+	background: #952f1e;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.7s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
