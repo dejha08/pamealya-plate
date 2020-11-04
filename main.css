@@ -198,7 +198,11 @@ section {
 	color: #111;
 }
 
-.menutText h3,
+.menuText h3 {
+	text-align: center;
+	margin: 10px 0px;
+}
+
 .howTo h3 {
 	text-align: center;
 	margin: 10px 0px;
