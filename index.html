@@ -3,18 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Pamaealya Plate</title>
+		<title>Pamealya Plate</title>
 
 		<link rel="stylesheet" href="main.css" />
 	</head>
 	<body>
 		<header>
 			<a href="#banner" class="logo"><span>P</span>amealya <span>P</span>late</a>
+			<div class="menuToggle" onclick="toggleMenu()"></div>
 			<ul class="navigation">
-				<li><a href="#about">About Us</a></li>
-				<li><a href="#menu">Menu</a></li>
-				<li><a href="#howTo">How to Order</a></li>
-				<li><a href="#contactUs">Contact Us</a></li>
+				<li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+				<li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+				<li><a href="#howTo" onclick="toggleMenu()">How to Order</a></li>
+				<li><a href="#contactUs" onclick="toggleMenu()">Contact Us</a></li>
 			</ul>
 		</header>
 
@@ -160,6 +161,9 @@
 			</div>
 		</section>
 
+		<div class="copyrightText">
+			<p>Copyright 2020 <a href="#banner">Pamealya Plate</a>. All Rights Reserved</p>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>

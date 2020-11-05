@@ -115,7 +115,7 @@ header .navigation li a:hover {
 }
 
 section {
-	padding: 150px;
+	padding: 100px;
 	min-height: 100vh;
 }
 
@@ -128,7 +128,7 @@ section {
 
 .row .col50 {
 	position: relative;
-	width: 50%;
+	width: 48%;
 }
 
 .imgBx img {
@@ -305,4 +305,119 @@ section {
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
+}
+
+.copyrightText {
+	padding: 8px 40px;
+	border-top: 1px solid #952f1e;
+	text-align: center;
+}
+
+.copyrightText p {
+	color: #952f1e;
+}
+
+.copyrightText a {
+	color: #952f1e;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+	header,
+	header.sticky {
+		padding: 10px 20px;
+	}
+
+	header .navigation {
+		display: none;
+	}
+
+	header .navigation.active {
+		width: 100%;
+		height: calc(100% - 68px);
+		position: fixed;
+		top: 68px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #f3f3f3;
+	}
+
+	header .navigation.active li {
+		list-style: none;
+	}
+
+	header .navigation.active li a {
+		color: #111111;
+		font-size: 1.6em;
+	}
+
+	header .navigation.active li a:hover {
+		color: #952f1e;
+		font-size: 1.6em;
+	}
+
+	.menuToggle {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url('./images/menu.png');
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	.menuToggle.active {
+		background: url('./images/close.png');
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+
+	header.sticky .menuToggle {
+		filter: invert(1);
+	}
+
+	section {
+		padding: 20px;
+	}
+
+	.banner .content h1 {
+		font-size: 3em;
+		color: #ffffff;
+	}
+
+	.row {
+		flex-direction: column;
+	}
+
+	.row .col50 {
+		position: relative;
+		width: 100%;
+	}
+
+	.row .col50 .imgBx {
+		height: 300px;
+		margin-top: 20px;
+	}
+
+	.menu .content {
+		margin-top: 30px;
+	}
+
+	.menu .content .box {
+		margin: 10px;
+	}
+}
+
+@media (max-width: 480) {
+	section {
+		padding: 80px;
+	}
 }
